@@ -1,7 +1,8 @@
-become_user: yes
-
+--- 
 - name: "Install base"
+  become_user: yes
   hosts: all
+  
   roles:
     - base
   
