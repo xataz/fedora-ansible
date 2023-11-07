@@ -1,0 +1,9 @@
+---
+# vars file for base
+
+
+packages_list:
+  - vim
+  - neovim
+  - git
+  - net-tools
