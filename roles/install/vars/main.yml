@@ -11,6 +11,7 @@ packages_list:
     - flatpak
     - zsh
     - curl
+    - vlc
   fedora:
     tools:
       - lm_sensors
@@ -32,6 +33,13 @@ flatpak_list:
     - com.discordapp.Discord
     - io.github.hmlendea.geforcenow-electron
     - im.riot.Riot
+    - md.obsidian.Obsidian
+    - org.libretro.RetroArch
+    - com.github.Matoking.protontricks
+    - org.yuzu_emu.yuzu
+    - io.podman_desktop.PodmanDesktop
+    - org.gnome.World.PikaBackup
+    - com.spotify.Client
   
 
 docker_packages:
