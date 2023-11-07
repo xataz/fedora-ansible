@@ -13,12 +13,24 @@
     dest: /home/xataz/.asdf
     version: v0.13.1
 
+- name: change ownership of an asdf directory
+  ansible.builtin.file:
+    path: /home/xataz/.asdf
+    state: directory
+    recurse: yes
+    owner: xataz
+    group: xataz
+
 - name: Configure Asdf for bash
   ansible.builtin.lineinfile:
     path: /home/xataz/.bashrc
     line: '. "$HOME/.asdf/asdf.sh"'
+    owner: xataz
+    group: xataz
 
 - name: Configure Asdf Completion for bash
   ansible.builtin.lineinfile:
     path: /home/xataz/.bashrc
     line: '. "$HOME/.asdf/completions/asdf.bash"'
+    owner: xataz
+    group: xataz

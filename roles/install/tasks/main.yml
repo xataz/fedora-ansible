@@ -15,7 +15,6 @@
     file: flatpak.yml
 
 - name: "Configure User xataz"
-  become_user: xataz
   ansible.builtin.include_tasks:
     file: user.yml
 
