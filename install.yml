@@ -1,8 +1,8 @@
 --- 
-- name: "Install base"
+- name: "Install fedora"
   become_user: root
   hosts: localhost
 
   roles:
-    - base
+    - fedora
   

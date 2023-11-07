@@ -1,7 +1,6 @@
 ---
 # vars file for base
 
-
 packages_list:
   - vim
   - neovim
@@ -10,6 +9,8 @@ packages_list:
   - steam
   - lutris
   - snapd
+  - 0ad
+  - 0ad-data
 
 flatpak_list:
   - com.bitwarden.desktop
@@ -18,3 +19,4 @@ flatpak_list:
   - com.discordapp.Discord
   - io.github.hmlendea.geforcenow-electron
   - im.riot.Riot
+  - com.mattjakeman.ExtensionManager
