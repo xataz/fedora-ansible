@@ -11,15 +11,14 @@ packages_list:
     - flatpak
     - zsh
     - curl
-    - vlc
   fedora:
     tools:
       - lm_sensors
       - dnf-plugins-core
+      - snapd
     gaming:
       - steam
       - lutris
-      - snapd
       - 0ad
       - 0ad-data
 
