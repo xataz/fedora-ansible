@@ -23,7 +23,7 @@
   ansible.builtin.yum_repository:
     name: docker
     description: Docker YUM repo
-    baseurl: https://download.docker.com/linux/fedora/docker-ce.repo
+    baseurl: https://download.docker.com/linux/fedora/$releasever/$basearch/stable
 
 - name: "Install docker packages"
   ansible.builtin.dnf:
