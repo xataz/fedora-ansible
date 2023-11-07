@@ -33,3 +33,10 @@ flatpak_list:
     - io.github.hmlendea.geforcenow-electron
     - im.riot.Riot
   
+
+docker_packages:
+  - docker-ce
+  - docker-ce-cli
+  - containerd.io
+  - docker-buildx-plugin
+  - docker-compose-plugin
