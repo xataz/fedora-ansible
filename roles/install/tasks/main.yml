@@ -1,11 +1,6 @@
 ---
 # tasks file for base
 
-- name: "Install packages"
-  ansible.builtin.dnf:
-    name: "{{ packages_list.global }}"
-    state: present
-
 - name: "[fedora] Include tasks"
   ansible.builtin.include_tasks:
     file: fedora.yml
@@ -19,6 +14,8 @@
   ansible.builtin.include_tasks:
     file: flatpak.yml
 
-
-
+- name: "Configure User xataz"
+  become_user: xataz
+  ansible.builtin.include_tasks:
+    file: user.yml
 

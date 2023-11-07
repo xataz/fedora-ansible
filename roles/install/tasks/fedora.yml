@@ -1,4 +1,9 @@
 ---
+- name: "Install global packages"
+  ansible.builtin.dnf:
+    name: "{{ packages_list.global }}"
+    state: present
+
 - name: "Install fedora tools packages"
   ansible.builtin.dnf:
     name: "{{ packages_list.fedora.tools }}"
@@ -12,4 +17,20 @@
 - name: "Install flatpak"
   community.general.flatpak:
     name: "{{ flatpak_list.fedora }}"
+    state: present
+
+- name: Add docker repository
+  ansible.builtin.yum_repository:
+    name: docker
+    description: Docker YUM repo
+    baseurl: https://download.docker.com/linux/fedora/docker-ce.repo
+
+- name: "Install docker packages"
+  ansible.builtin.dnf:
+    name:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
     state: present

@@ -1,0 +1,24 @@
+# Group
+- name: Add user in group
+  ansible.builtin.user:
+    name: xataz
+    shell: /bin/bash
+    groups: wheel,lxd,docker
+    append: yes
+
+# ASDF
+- name: Download Asdf
+  ansible.builtin.git:
+    repo: https://github.com/asdf-vm/asdf.git
+    dest: /home/xataz/.asdf
+    version: v0.13.1
+
+- name: Configure Asdf for bash
+  ansible.builtin.lineinfile:
+    path: /home/xataz/.bashrc
+    line: '. "$HOME/.asdf/asdf.sh"'
+
+- name: Configure Asdf Completion for bash
+  ansible.builtin.lineinfile:
+    path: /home/xataz/.bashrc
+    line: '. "$HOME/.asdf/completions/asdf.bash"'

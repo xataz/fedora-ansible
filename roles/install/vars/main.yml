@@ -9,9 +9,12 @@ packages_list:
     - net-tools
     - htop
     - flatpak
+    - zsh
+    - curl
   fedora:
     tools:
       - lm_sensors
+      - dnf-plugins-core
     gaming:
       - steam
       - lutris
