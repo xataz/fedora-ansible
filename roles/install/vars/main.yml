@@ -8,6 +8,7 @@ packages_list:
     - git
     - net-tools
     - htop
+    - flatpak
   fedora:
     tools:
       - lm_sensors
@@ -18,12 +19,10 @@ packages_list:
       - 0ad
       - 0ad-data
 
-  
-
 flatpak_list:
   global:
     - com.mattjakeman.ExtensionManager
-  Fedora:
+  fedora:
     - com.bitwarden.desktop
     - com.vscodium.codium
     - com.github.IsmaelMartinez.teams_for_linux

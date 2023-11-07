@@ -8,3 +8,8 @@
   ansible.builtin.dnf:
     name: "{{ packages_list.fedora.gaming }}"
     state: present
+
+- name: "Install flatpak"
+  community.general.flatpak:
+    name: "{{ flatpak_list.fedora }}"
+    state: present

@@ -1,7 +1,6 @@
 ---
 - name: "Install flatpak"
   community.general.flatpak:
-    name: 
-      - "{{ flatpak_list.global }}"
-      - "{{ flatpak_list[ansible_distribution] }}"
+    name: "{{ flatpak_list.global }}"
     state: present
+
