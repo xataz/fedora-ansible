@@ -1,6 +1,6 @@
 become_user: yes
 
-- name: Install base
+- name: "Install base"
   hosts: all
   roles:
     - base

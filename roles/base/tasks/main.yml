@@ -1,9 +1,9 @@
 ---
 # tasks file for base
 
-- name: Install minimal package
+- name: "Install minimal package"
   ansible.builtin.dnf:
     name: "{{ list_packages }}"
     state: present
-    
+
     
