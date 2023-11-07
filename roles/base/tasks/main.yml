@@ -6,7 +6,7 @@
     name: "{{ packages_list }}"
     state: present
 
- - name: "Install flatpak"
-   community.general.flatpak:
-     name: "{{ flatpak_list }}"
-     state: present
+- name: "Install flatpak"
+  community.general.flatpak:
+    name: "{{ flatpak_list }}"
+    state: present
