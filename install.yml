@@ -1,6 +1,6 @@
 --- 
 - name: "Install base"
-  become_user: yes
+  become_user: root
   hosts: localhost
 
   roles:
