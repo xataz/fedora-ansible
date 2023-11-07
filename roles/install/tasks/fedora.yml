@@ -1,0 +1,7 @@
+---
+- name: "Install fedora packages"
+  ansible.builtin.dnf:
+    name: 
+      - "{{ packages_list.fedora.tools }}"
+      - "{{ packages_list.fedora.gaming }}"
+    state: present

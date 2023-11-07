@@ -1,0 +1,33 @@
+---
+# vars file for base
+
+packages_list:
+  global:
+    - vim
+    - neovim
+    - git
+    - net-tools
+    - htop
+  fedora:
+    tools:
+      - lm_sensors
+    gaming:
+      - steam
+      - lutris
+      - snapd
+      - 0ad
+      - 0ad-data
+
+  
+
+flatpak_list:
+  global:
+    - com.mattjakeman.ExtensionManager
+  Fedora:
+    - com.bitwarden.desktop
+    - com.vscodium.codium
+    - com.github.IsmaelMartinez.teams_for_linux
+    - com.discordapp.Discord
+    - io.github.hmlendea.geforcenow-electron
+    - im.riot.Riot
+  

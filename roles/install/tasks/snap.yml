@@ -1,0 +1,11 @@
+---
+- name: "Start service snapd"
+  ansible.builtin.service:
+    name: snapd
+    state: started
+    enabled: yes
+
+- name: "Install LXD"
+  community.general.snap:
+    name: lxd
+    classic: true

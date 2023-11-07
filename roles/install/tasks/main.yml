@@ -1,0 +1,24 @@
+---
+# tasks file for base
+
+- name: "Install packages"
+  ansible.builtin.dnf:
+    name: "{{ packages_list.global }}"
+    state: present
+
+- name: "[fedora] Include tasks"
+  ansible.builtin.include_tasks:
+    file: fedora.yml
+  when: ansible_distribution == "Fedora"
+
+- name: "[snap] Include tasks"
+  ansible.builtin.include_tasks:
+    file: snap.yml
+
+- name: "[flatpak] Include tasks"
+  ansible.builtin.include_tasks:
+    file: flatpak.yml
+
+
+
+
