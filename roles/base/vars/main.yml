@@ -7,3 +7,14 @@ packages_list:
   - neovim
   - git
   - net-tools
+  - steam
+  - lutris
+  - snapd
+
+flatpak_list:
+  - com.bitwarden.desktop
+  - com.vscodium.codium
+  - com.github.IsmaelMartinez.teams_for_linux
+  - com.discordapp.Discord
+  - io.github.hmlendea.geforcenow-electron
+  - im.riot.Riot
