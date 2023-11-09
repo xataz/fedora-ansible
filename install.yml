@@ -1,8 +1,8 @@
 --- 
-- name: "Install fedora"
+- name: "Install package"
   become_user: root
   hosts: localhost
 
   roles:
-    - install
+    - package
   

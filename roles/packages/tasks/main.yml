@@ -1,0 +1,14 @@
+---
+# tasks file for base
+
+- name: "[{{ ansible_distribution }}] Include tasks for install packages"
+  ansible.builtin.include_tasks:
+    file: "{{ ansible_distribution|lower}}.yml"
+
+- name: "[snap] Include tasks for install snap"
+  ansible.builtin.include_tasks:
+    file: snap.yml
+
+- name: "[flatpak] Include tasks for install flatpak"
+  ansible.builtin.include_tasks:
+    file: flatpak.yml

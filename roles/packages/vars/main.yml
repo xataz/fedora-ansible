@@ -11,21 +11,40 @@ packages_list:
     - flatpak
     - zsh
     - curl
+    - dnsutils
+    - tcpdump
+    - make
+    - sudo
+    - traceroute
+    - strace
+    - ack
+    - nmap
+    - gcc
+    - automake
+    - autoconf
+    - tmux
+    - python3
+    - python3-pip
+    - nodejs
+    - rust
+    - cargo
   fedora:
-    tools:
-      - lm_sensors
-      - dnf-plugins-core
-      - snapd
-    gaming:
-      - steam
-      - lutris
-      - 0ad
-      - 0ad-data
+    - lm_sensors
+    - dnf-plugins-core
+    - snapd
+    - firewalld
+    - nodejs-npm
+    - podman
+  archlinux:
+    - bitwarden
+    - vscodium
+    - discord
 
 flatpak_list:
   global:
     - com.mattjakeman.ExtensionManager
   fedora:
+    - com.mattjakeman.ExtensionManager
     - com.bitwarden.desktop
     - com.vscodium.codium
     - com.github.IsmaelMartinez.teams_for_linux
@@ -39,8 +58,8 @@ flatpak_list:
     - io.podman_desktop.PodmanDesktop
     - org.gnome.World.PikaBackup
     - com.spotify.Client
+    - org.videolan.VLC
   
-
 docker_packages:
   - docker-ce
   - docker-ce-cli
